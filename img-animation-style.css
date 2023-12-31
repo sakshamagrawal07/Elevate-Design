@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+}
+
+.container {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.right-triangle {
+    clip-path: polygon(0% 0%, 45% 0, 75% 50%, 45% 100%, 0% 100%);
+    background-color: #00C2FF;
+    height: 600px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 90%;
+    /* height: 70%; */
+    transform: translate(34%);
+    animation: img-move 10s infinite;
+}
+
+ @keyframes img-move {
+    0% {
+        transform: translateX(34%) rotate(-360deg);
+    }
+    5%, 16% {
+        transform: translateX(34%) rotate(-300deg);
+    }
+    21%, 32% {
+        transform: translateX(34%) rotate(-240deg);
+    }
+    37%, 48% {
+        transform: translateX(34%) rotate(-180deg);
+    }
+    50%, 52% {
+        transform: translateX(34%) rotate(-120deg); 
+    }
+    53%, 64% {
+        transform: translateX(34%) rotate(-60deg);
+    }
+    69%, 80% {
+        transform: translateX(34%) rotate(0deg); 
+    }
+    81%, 100% {
+        transform: translateX(34%) rotate(60deg);
+    }
+} 
